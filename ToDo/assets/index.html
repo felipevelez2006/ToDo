@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo</title>
+  <link rel="stylesheet" href="/ToDo/assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Mi Lista de Tareas</h1>
+      <div class="score-container">
+        <span>Puntaje:</span>
+        <span id="score">0</span>
+      </div>
+    </header>
+    
+    <div class="task-controls">
+      <div class="add-task">
+        <input type="text" id="taskInput" placeholder="Agregar nueva tarea...">
+        <button id="addTaskBtn"><i class="fas fa-plus"></i></button>
+      </div>
+      <div class="search-task">
+        <input type="text" id="searchInput" placeholder="Buscar tareas...">
+        <button id="searchBtn"><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+    
+    <div class="task-list-container">
+      <h2>Tareas</h2>
+      <ul id="taskList">
+        <!-- Las tareas se agregarán dinámicamente aquí -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="/ToDo/assets/js/script.js"></script>
+</body>
+</html>
